@@ -49,4 +49,4 @@ Spiking neuron modelを作り分布推定したところ，指数分布が一番
 
 # 結論
 この論文では，実データに置いてML以外の指標をみてみて，ISIがどの分布に従ってるかを推定した．
-</font color="Green">"reasonable firing rates with a wide range, likely including excitatory neurons (low rates) and inhibitory neurons (higher rates)"が気になった．"A firing rate of 199.75 Hz is not uncommon for fast-spiking inhibitory neurons"とも書いてあった．</font>
+<font color="Green">"reasonable firing rates with a wide range, likely including excitatory neurons (low rates) and inhibitory neurons (higher rates)"が気になった．"A firing rate of 199.75 Hz is not uncommon for fast-spiking inhibitory neurons"とも書いてあった．</font>
