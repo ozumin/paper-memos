@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nonnegative Matrix Factorization for Signal and Data Analytics: [Identifiability, Algorithms, and Applications] (Fu et al., 2018)"
-date:   2020-03-25 01:07:13 +0900
+date:   2020-03-25 00:07:13 +0900
 categories: paper
 ---
 <script type="text/x-mathjax-config">
@@ -71,11 +71,26 @@ NMFの幾何的な解釈．
 実際に使う時にこの仮定を置けない場合は$\bf X$の列和を1にすると無理やり使える．
 この時，データの行は$\bf W$の列のconvex hullに属している．
 この2つを表した図が以下．
-![Cone](/assets/2020-03-25.png)
+![Cone](/assets/2020-03-25-1.png)
 
 Separabilityとsufficiently scatteredという条件がある．
 <font color="Green">ここもよくわからない．．</font>
 
 #### Separability-based methods for NMF
 Separability条件をもち，identifiabilityが保証されている手法の紹介．
+Separabilityがあるということはconvex hullがデータにtouchedだということ．
+![separability](/assets/2020-03-25-2.png)
+<font color="Green">そうか，$\bf H_\sharp$のある列が単位ベクトルということは，それが$\bf W$の行にかけるからその行がそのままデータ$\bf X$の行になるのか</font>
+つまり，$\Lambda$をインデックスだとすると，${\bf X}(:,\Lambda) = {\bf W_\sharp}$となる（ノイズがない場合），
+なので問題は，全てのデータ点を含むconvex hullを張るデータ点を探すことになる．
+<font color="Green">なるほど...?</font>
 
+このようなデータ点をvertices (convex hull)かextreme rays (conic hull)というらしい．
+性質から式(14)が成り立つらしい．
+<font color="Green">なんとなくわかるような</font>
+これを解くにはNが大きいと大変だよと．
+
+大量の凸最適化を避けるのにconvex optimazation-based NMFが提案された（式(15)）．
+Block-sparse optimaizationのフレームワークらしい．
+このままでは凸ではないので条件を緩和して凸にしたのが式(16)．
+ただ，計算コストが高いので，次の貪慾法を使ってからこの手法を使うのが良いのでは，と書いてある．
