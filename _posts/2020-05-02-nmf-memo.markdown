@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "NMFの更新則のメモ"
+date:   2020-05-02 01:07:13 +0900
+categories: memo
+---
+前書いてたのを持ってきた．
+
+
+更新手法色々ありそうなのでめも．
+Faster-than-fast NMF using random projections and Nesterov iterations (Yahaya, 2019)の先行研究を見た
+## Lee & Seung (2001)
+[Algorithms for Non-negative Matrix Factorization](https://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf)
+
+Multiplicative update
+
+## Cichoki (2007)
+[Hierarchical ALS Algorithms for Nonnegative Matrix and 3D Tensor Factorization](https://link.springer.com/chapter/10.1007/978-3-540-74494-8_22)
+
+HALS
+
+## Lin (2007)
+[Projected Gradient Methods for Non-negative Matrix Factorization](https://www.csie.ntu.edu.tw/~cjlin/papers/pgradnmf.pdf)
+
+Projected Gradient (PG)
+
+## Kim (2008)
+[Toward Faster Nonnegative Matrix Factorization: A New Algorithm and Comparisons](https://www.cc.gatech.edu/~hpark/papers/nmf_blockpivot.pdf)
+
+ANLS
+
+## Guan (2012)
+[NeNMF: An optimal gradient method for nonnegative matrix factorization](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6166359)
+
+NeNMF
+
+## Yahaya (2019)
+[Faster-than-fast NMF using random projections and Nesterov iterations](http://www-lisic.univ-littoral.fr/publis/1536871537.pdf)
+
+NeNMFの改良
