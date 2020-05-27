@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Network Homeostasis and StateDynamics of Neocortical Sleep (Watson et al., 2016)"
+title:  "Network Homeostasis and State Dynamics of Neocortical Sleep (Watson et al., 2016)"
 date:   2020-05-27 00:07:13 +0900
 categories: paper
 ---
